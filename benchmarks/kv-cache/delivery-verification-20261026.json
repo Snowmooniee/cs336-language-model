@@ -1,0 +1,92 @@
+{
+  "source_revision": "794da624b87390e48453bab629c853ce257f9cd5",
+  "source_archive_sha256": "006bb5197bc0e5d2ca1c039dfca7db28356abc7d2c89b7db2e5da6d23faacd62",
+  "dependencies": "Reused existing pinned WSL dependency environment; fresh source/artifact directory, not a fresh installation",
+  "python": "3.13.16 (main, Oct  9 2026, 15:23:36) [Clang 22.1.3 ]",
+  "torch": "2.11.0+cu130",
+  "device": "cpu",
+  "cuda_initialized": false,
+  "artifact_hashes_verified": true,
+  "generation_outputs_match": true,
+  "natural_eos_stop_verified": true,
+  "benchmark_cases": 5,
+  "raw_measurements": 30,
+  "all_greedy_ids_match": true,
+  "maximum_prefill_logit_absolute_error": 1.5735626220703125e-05,
+  "source_checkpoint_sha256": "c41dbd96c25aa836dbd13c58fd3113fd6acbd3b2d09699e6e51878d699739789",
+  "exported_weights_sha256": "9588b24832531c1f2c1fa4faab3490ca5676a7db8e548c1cfcd6aecc19b74c24",
+  "source_loaded_from_extracted_directory": true,
+  "inference_artifact_manifest": {
+    "format": "torch.save dictionary containing model state only; no optimizer or RNG state",
+    "source_revision": "493654db846d8071a0ffc1cdf95d439918029bdc",
+    "source_checkpoint_sha256": "c41dbd96c25aa836dbd13c58fd3113fd6acbd3b2d09699e6e51878d699739789",
+    "source_config_sha256": "a633e067c1c25cae440289663a3061d296609e9b3552f846d7cef448f775444f",
+    "source_iteration": 20000,
+    "parameters": 22696448,
+    "all_exported_parameters_equal": true,
+    "torch": "2.11.0+cu130",
+    "files": {
+      "config.json": {
+        "bytes": 218,
+        "sha256": "96a0285842b34c490e10bf6c9bd671291a88c47dcb0ae62d9aecf3ab5faa6609"
+      },
+      "merges.pkl": {
+        "bytes": 129778,
+        "sha256": "41eec5a68dd9034e81890b73f80f0e7ae0618f9063cc4cb19f51586c8801d41f"
+      },
+      "vocab.pkl": {
+        "bytes": 117702,
+        "sha256": "b9a3565b55d0b16c03a7fd876296207084932b799923418055c7d48cacb7b7ea"
+      },
+      "weights.pt": {
+        "bytes": 90800046,
+        "sha256": "9588b24832531c1f2c1fa4faab3490ca5676a7db8e548c1cfcd6aecc19b74c24"
+      }
+    },
+    "usage": "Requires this project source and its pinned environment; see docs/delivery.md"
+  },
+  "eos_check": {
+    "scope": "Greedy continuation of the recorded completed story, with its EOS removed",
+    "eos_token_id": 256,
+    "prompt_tokens": 153,
+    "all_outputs_match": true,
+    "samples": [
+      {
+        "kv_cache": false,
+        "generated_token_ids": [
+          256
+        ],
+        "generated_tokens": 1,
+        "elapsed_seconds": 0.02219362900359556,
+        "time_to_first_token_seconds": 0.022073620988521725,
+        "decode_seconds": 0.00012000801507383585,
+        "decode_tokens_per_second": null,
+        "cache_bytes": 0,
+        "cache_tokens": 0,
+        "context_rebuilds": 0
+      },
+      {
+        "kv_cache": true,
+        "generated_token_ids": [
+          256
+        ],
+        "generated_tokens": 1,
+        "elapsed_seconds": 0.017077177995815873,
+        "time_to_first_token_seconds": 0.016954693011939526,
+        "decode_seconds": 0.00012248498387634754,
+        "decode_tokens_per_second": null,
+        "cache_bytes": 2506752,
+        "cache_tokens": 153,
+        "context_rebuilds": 0
+      }
+    ]
+  },
+  "publication_status": "Prepared locally; no weight upload or repository visibility change",
+  "training_provenance": {
+    "run": "tinystories-batch-64",
+    "source_sha256": "cd3621e4c26d88cbe6052a7fb5259cd5c2a97e32914aa62fa2ec05b1811fe104",
+    "training_tokens": 327680000,
+    "project_compatibility_baseline": "493654db846d8071a0ffc1cdf95d439918029bdc",
+    "note": "Project revision used to load/export is distinct from the historical training-source fingerprint."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "phase": "learning_rate_tuning",
+  "seed": 42,
+  "jobs": [
+    {
+      "name": "sgd-1",
+      "config": {
+        "output_dir": "benchmarks/sgd/sgd-1",
+        "learning_rate": 1.0
+      }
+    },
+    {
+      "name": "sgd-10",
+      "config": {
+        "output_dir": "benchmarks/sgd/sgd-10",
+        "learning_rate": 10.0
+      }
+    },
+    {
+      "name": "sgd-100",
+      "config": {
+        "output_dir": "benchmarks/sgd/sgd-100",
+        "learning_rate": 100.0
+      }
+    },
+    {
+      "name": "sgd-1000",
+      "config": {
+        "output_dir": "benchmarks/sgd/sgd-1000",
+        "learning_rate": 1000.0
+      }
+    }
+  ]
+}

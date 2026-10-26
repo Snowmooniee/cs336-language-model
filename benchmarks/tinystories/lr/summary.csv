@@ -1,0 +1,7 @@
+run,status,last_step,last_train_loss,last_validation_loss,max_learning_rate,normalization,ffn_type,physical_batch_size,effective_batch_size,no_rope,d_ff
+tinystories-lr-0.0001,completed,40000,1.52024507522583,1.6073548257350923,0.0001,pre,swiglu,32,32,False,1344
+tinystories-lr-0.0003,completed,40000,1.3549803495407104,1.447238129377365,0.0003,pre,swiglu,32,32,False,1344
+tinystories-lr-0.001,completed,40000,1.286597728729248,1.379191952943802,0.001,pre,swiglu,32,32,False,1344
+tinystories-lr-0.003,completed,40000,1.3005197048187256,1.3946634650230407,0.003,pre,swiglu,32,32,False,1344
+tinystories-lr-0.01,completed,40000,1.4600193500518799,1.5465030252933503,0.01,pre,swiglu,32,32,False,1344
+tinystories-lr-0.1,diverged,6500,5.024117469787598,4.763305926322937,0.1,pre,swiglu,32,32,False,1344

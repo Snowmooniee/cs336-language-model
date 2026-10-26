@@ -1,0 +1,596 @@
+{
+  "date": "2026-10-26",
+  "archives": {
+    "cs336-a1-trained-20261024.tar.gz": "434bd01584a8ed8a158b8d5c0041df2f7b582d1523e3d42d388d8475d0950fe9",
+    "a1-tinystories-evidence-20261025.tar.gz": "25db17d5032358cb294605ff0e6541602b5a2f969aee32020f492731cf76e8e6",
+    "cs336-a1-tinystories-experiments-20261025.tar.gz": "962059cef80e7a73cc31cb3392c1d9d56e22e3743a461af1c8b3d94f236b0ec7"
+  },
+  "original_metrics_modified": false,
+  "recovery_root_cause": "Unknown; missing/truncated metric files with intact console records",
+  "recovery_counts": {
+    "lr": 1923,
+    "batch": 4195,
+    "ablation": 0
+  },
+  "dataset": {
+    "dtype": "<u2",
+    "vocab_size": 10000,
+    "vocab_sha256": "b9a3565b55d0b16c03a7fd876296207084932b799923418055c7d48cacb7b7ea",
+    "merges_sha256": "41eec5a68dd9034e81890b73f80f0e7ae0618f9063cc4cb19f51586c8801d41f",
+    "splits": {
+      "train": {
+        "source": "data/TinyStoriesV2-GPT4-train.txt",
+        "source_sha256": "6418d412de72888f52b5142c761ac21a582f7d1166f0bfbdb5f03ccfdec90443",
+        "tokens": 541229086,
+        "bytes": 1082458172,
+        "sha256": "be35e5c52397408d0102fea2c1474b882a771ed78416ca699972b66bf3591216"
+      },
+      "valid": {
+        "source": "data/TinyStoriesV2-GPT4-valid.txt",
+        "source_sha256": "6874bae9a4c1a4e7edcf0e53b86c17817e9cf881fc75ff2368da457b80c0585d",
+        "tokens": 5465880,
+        "bytes": 10931760,
+        "sha256": "bc9832b6491b285a70d2c6245d63c24714296c59af84802f3c62b3d6cdad8e13"
+      }
+    }
+  },
+  "bpe": {
+    "input": "data/TinyStoriesV2-GPT4-train.txt",
+    "requested_vocab_size": 10000,
+    "vocab_size": 10000,
+    "merges": 9743,
+    "training_seconds": 744.8790260009991,
+    "peak_process_memory_mib": 10910.7421875,
+    "longest_token": "b' accomplishment'",
+    "longest_token_bytes": 15,
+    "profile_enabled": false,
+    "progress_enabled": true
+  },
+  "tokenizer_probe": {
+    "scope": "validation-prefix encoding probe",
+    "characters": 200000,
+    "bytes": 200088,
+    "tokens": 48812,
+    "bytes_per_token": 4.099155945259363,
+    "encoding_seconds": 0.39109502700011944,
+    "bytes_per_second": 511609.6758753695,
+    "roundtrip_passed": true
+  },
+  "runs": [
+    {
+      "name": "tinystories-lr-0.0001",
+      "metrics_sha256": "3beee1b85bc15ccdddf87b95f46bff26090369b80e32a1a8d265cd3b78c2ab5a",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 800,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-lr-0.0003",
+      "metrics_sha256": "d4d81c11e419986eecfbb25a95c137bd3a39946db5b6b9c229bfd6b544c60243",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 800,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-lr-0.001",
+      "metrics_sha256": "ecbdf7bb71305d1e886578f0d5310656ed0fff147c5f464d518551763796c6ff",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 800,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-lr-0.003",
+      "metrics_sha256": "65d021d3ff9059bdcc067338b6160dac21d05f48131ee5b6eed68da9e681d571",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 800,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-lr-0.01",
+      "metrics_sha256": "5ef16509ceafbe7a1007ebb88ea5df4ae161122b2c560424156b5370dfd64b81",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 800,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-lr-0.1",
+      "metrics_sha256": "134c76493abb3828096c2d0ca3d6e7b9cd3ef86d829da8f75597faebce96f4d4",
+      "plan_sha256": "a159cdf7f2cfa37f6542eb057fe1fb54e6ffa08e930beaef63dfdac1d7e92129",
+      "results_sha256": "8314208b8b79e87b18377a859581d1c8fb97238b9aa492cb0f871dc3d23c1a24",
+      "metric_records": 130,
+      "source": "Previously validated console recovery; full log hashes in local verified archive"
+    },
+    {
+      "name": "tinystories-batch-32",
+      "metrics_sha256": "bfe7625c8a84e9fb22a5f272c620deb7dff180062a2a423eca174032f5a809b8",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-batch-32",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166145,
+            "sha256": "bfe7625c8a84e9fb22a5f272c620deb7dff180062a2a423eca174032f5a809b8",
+            "mtime_ns": 1792885550393385210,
+            "ctime_ns": 1792885550393385210,
+            "inode": 32234182101
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "mtime_ns": 1792897036190523501,
+            "ctime_ns": 1792897036190523501,
+            "inode": 32234182103
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 948,
+            "sha256": "5b2bad10f50a14ae6239496c4e4ec024e49cdaeb3d111ab0b99cfa058f09a2d6",
+            "mtime_ns": 1792883841067051602,
+            "ctime_ns": 1792883841067051602,
+            "inode": 32234182102
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 0,
+        "recovered_missing_records": 800,
+        "checkpoint_iteration": 40000
+      }
+    },
+    {
+      "name": "tinystories-batch-64",
+      "metrics_sha256": "bb90b9e637ca43624494e07aca0084fc6e52197d8884d0fe5952aa1c86046d66",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-batch-64",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 165815,
+            "sha256": "bb90b9e637ca43624494e07aca0084fc6e52197d8884d0fe5952aa1c86046d66",
+            "mtime_ns": 1792887272378253646,
+            "ctime_ns": 1792887272378253646,
+            "inode": 152565364
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "mtime_ns": 1792897036190523501,
+            "ctime_ns": 1792897036190523501,
+            "inode": 152565366
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 947,
+            "sha256": "a633e067c1c25cae440289663a3061d296609e9b3552f846d7cef448f775444f",
+            "mtime_ns": 1792885553665105094,
+            "ctime_ns": 1792885553665105094,
+            "inode": 152565365
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 0,
+        "recovered_missing_records": 800,
+        "checkpoint_iteration": 20000
+      }
+    },
+    {
+      "name": "tinystories-batch-128",
+      "metrics_sha256": "a8c397c227c48624b8c4115667999c3bdaae3de2a9b93b1d70f2838ce0acdc4f",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 907,
+      "recovery": {
+        "name": "tinystories-batch-128",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 186601,
+            "sha256": "a8c397c227c48624b8c4115667999c3bdaae3de2a9b93b1d70f2838ce0acdc4f",
+            "mtime_ns": 1792889037968202824,
+            "ctime_ns": 1792889037968202824,
+            "inode": 3245325489
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "mtime_ns": 1792897036182522325,
+            "ctime_ns": 1792897036182522325,
+            "inode": 3245325491
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 949,
+            "sha256": "d88182305e7afae82b42e49d6cdcb834d365e6aeed7d84a84fa7347f3f2303dd",
+            "mtime_ns": 1792887275366042501,
+            "ctime_ns": 1792887275366042501,
+            "inode": 3245325490
+          }
+        },
+        "console_metric_records": 907,
+        "original_metric_records": 0,
+        "recovered_missing_records": 907,
+        "checkpoint_iteration": 10000
+      }
+    },
+    {
+      "name": "tinystories-batch-256",
+      "metrics_sha256": "096b69c796e29accf7a1bd36d07140b3af7f8537bfcc5d676ee72bcd5377076a",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 888,
+      "recovery": {
+        "name": "tinystories-batch-256",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 182849,
+            "sha256": "096b69c796e29accf7a1bd36d07140b3af7f8537bfcc5d676ee72bcd5377076a",
+            "mtime_ns": 1792890848193885487,
+            "ctime_ns": 1792890848193885487,
+            "inode": 7527490974
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "mtime_ns": 1792897036186522913,
+            "ctime_ns": 1792897036186522913,
+            "inode": 7542168326
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 944,
+            "sha256": "0d2bd221288eb50576e04733eeda2f02f77434823cca4c11012a5870d857e29d",
+            "mtime_ns": 1792889041056414547,
+            "ctime_ns": 1792889041056414547,
+            "inode": 7527490975
+          }
+        },
+        "console_metric_records": 888,
+        "original_metric_records": 0,
+        "recovered_missing_records": 888,
+        "checkpoint_iteration": 5000
+      }
+    },
+    {
+      "name": "tinystories-batch-320",
+      "metrics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 0,
+      "recovery": {
+        "name": "tinystories-batch-320",
+        "status": "out_of_memory",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 2123,
+            "sha256": "493066f241bdc9344139c54ca23898d9fe0d8963ce62c722072e3d2840e151c5",
+            "mtime_ns": 1792890851701819805,
+            "ctime_ns": 1792890851701819805,
+            "inode": 11840626099
+          },
+          "metrics.jsonl": {
+            "exists": false
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 944,
+            "sha256": "8986da0724a76ee03ae2f49c57d7f227c95959cc758fce2b9dbe78fd75048c2e",
+            "mtime_ns": 1792890851217828871,
+            "ctime_ns": 1792890851217828871,
+            "inode": 11840626100
+          }
+        },
+        "console_metric_records": 0,
+        "original_metric_records": 0,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": null
+      }
+    },
+    {
+      "name": "tinystories-batch-8",
+      "metrics_sha256": "609c1f8293b6b4316ad812f6e0da3405fc70004a43c2273569cb80df817b04e1",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-batch-8",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166569,
+            "sha256": "609c1f8293b6b4316ad812f6e0da3405fc70004a43c2273569cb80df817b04e1",
+            "mtime_ns": 1792893318345275875,
+            "ctime_ns": 1792893318345275875,
+            "inode": 12907598383
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "mtime_ns": 1792897036194524089,
+            "ctime_ns": 1792897036194524089,
+            "inode": 12907598385
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 951,
+            "sha256": "cb3896e2fc6a4a35f58470b605a6d62b48e3c18f8db2d90eb13e4b9760d54df2",
+            "mtime_ns": 1792890854453768235,
+            "ctime_ns": 1792890854453768235,
+            "inode": 12907598384
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 0,
+        "recovered_missing_records": 800,
+        "checkpoint_iteration": 160000
+      }
+    },
+    {
+      "name": "tinystories-batch-1",
+      "metrics_sha256": "517fbc9927ca2fb5c810a311507e17243b0e74b265358bbad39c9bee15ab0e58",
+      "plan_sha256": "62a2bcc28d5a305462a1cae490d786e805726e4b6088990f201d4e74f08b77e9",
+      "results_sha256": "f9659fd975f91798a8a45a4c045d405f80992a038b00509454ca14e14aecc194",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-batch-1",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 167088,
+            "sha256": "517fbc9927ca2fb5c810a311507e17243b0e74b265358bbad39c9bee15ab0e58",
+            "mtime_ns": 1792912160858457528,
+            "ctime_ns": 1792912160858457528,
+            "inode": 15033403343
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 167088,
+            "sha256": "517fbc9927ca2fb5c810a311507e17243b0e74b265358bbad39c9bee15ab0e58",
+            "mtime_ns": 1792912160858457528,
+            "ctime_ns": 1792912160858457528,
+            "inode": 15033403348
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 957,
+            "sha256": "90c20fa59a333d453ac4b342bfb649ce78c6a27ff5b98ed46bb53cdf1f606b5d",
+            "mtime_ns": 1792893321389396842,
+            "ctime_ns": 1792893321389396842,
+            "inode": 15033403344
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 1280000
+      }
+    },
+    {
+      "name": "tinystories-no-norm",
+      "metrics_sha256": "d5606f9ad054289073be856af70faeaec258a2e089f81a2eb3b9decec168784b",
+      "plan_sha256": "b97d59ed132eff5aef1e9e66792c4e982a2224fcc46be2ee2f0fd601024b7f36",
+      "results_sha256": "4743af61dfa3c06b7dfc3995dd405ee7f3fe2efc51a0bd35377980e07dcef8cb",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-no-norm",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166085,
+            "sha256": "d5606f9ad054289073be856af70faeaec258a2e089f81a2eb3b9decec168784b",
+            "mtime_ns": 1792917581444445935,
+            "ctime_ns": 1792917581444445935,
+            "inode": 31151904961
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 166085,
+            "sha256": "d5606f9ad054289073be856af70faeaec258a2e089f81a2eb3b9decec168784b",
+            "mtime_ns": 1792917581444445935,
+            "ctime_ns": 1792917581444445935,
+            "inode": 31151923776
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 953,
+            "sha256": "057b1ac9acd2296c2cf8f5357c08f98f8958c11ef48d9e1ab55251e3341cb6b9",
+            "mtime_ns": 1792915946022086947,
+            "ctime_ns": 1792915946022086947,
+            "inode": 31151904962
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 40000
+      }
+    },
+    {
+      "name": "tinystories-no-norm-low-lr",
+      "metrics_sha256": "a9d4a25fb4583a5a03ba93e0a3f07c67a3ce8fb8e78efa2114f614477a65a0b8",
+      "plan_sha256": "b97d59ed132eff5aef1e9e66792c4e982a2224fcc46be2ee2f0fd601024b7f36",
+      "results_sha256": "4743af61dfa3c06b7dfc3995dd405ee7f3fe2efc51a0bd35377980e07dcef8cb",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-no-norm-low-lr",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166097,
+            "sha256": "a9d4a25fb4583a5a03ba93e0a3f07c67a3ce8fb8e78efa2114f614477a65a0b8",
+            "mtime_ns": 1792919237500436333,
+            "ctime_ns": 1792919237500436333,
+            "inode": 33287412601
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 166097,
+            "sha256": "a9d4a25fb4583a5a03ba93e0a3f07c67a3ce8fb8e78efa2114f614477a65a0b8",
+            "mtime_ns": 1792919237500436333,
+            "ctime_ns": 1792919237500436333,
+            "inode": 33287706327
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 960,
+            "sha256": "311ab40724852c4276cc5a8f282fc9fe6b2c182f8b07ab9bbe622f65786fbec3",
+            "mtime_ns": 1792917584444581127,
+            "ctime_ns": 1792917584444581127,
+            "inode": 33287615953
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 40000
+      }
+    },
+    {
+      "name": "tinystories-post-norm",
+      "metrics_sha256": "167d16b27c0793d69a4fe6e20915d5e1b6a11cdd139b42546a63cbdd96bef7e0",
+      "plan_sha256": "b97d59ed132eff5aef1e9e66792c4e982a2224fcc46be2ee2f0fd601024b7f36",
+      "results_sha256": "4743af61dfa3c06b7dfc3995dd405ee7f3fe2efc51a0bd35377980e07dcef8cb",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-post-norm",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166111,
+            "sha256": "167d16b27c0793d69a4fe6e20915d5e1b6a11cdd139b42546a63cbdd96bef7e0",
+            "mtime_ns": 1792920959650039989,
+            "ctime_ns": 1792920959650039989,
+            "inode": 2162357596
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 166111,
+            "sha256": "167d16b27c0793d69a4fe6e20915d5e1b6a11cdd139b42546a63cbdd96bef7e0",
+            "mtime_ns": 1792920959650039989,
+            "ctime_ns": 1792920959650039989,
+            "inode": 2163374924
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 955,
+            "sha256": "a0667a501285b0163f9e74c2dc51fbdc1d7fa41d085ad4a6662cf7a991c3b7bf",
+            "mtime_ns": 1792919240600403513,
+            "ctime_ns": 1792919240600403513,
+            "inode": 2163374923
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 40000
+      }
+    },
+    {
+      "name": "tinystories-nope",
+      "metrics_sha256": "76f5b160b7739ded3ce38cbf9ab693a79b6a80611de5b1cdadca793ac7bed2eb",
+      "plan_sha256": "b97d59ed132eff5aef1e9e66792c4e982a2224fcc46be2ee2f0fd601024b7f36",
+      "results_sha256": "4743af61dfa3c06b7dfc3995dd405ee7f3fe2efc51a0bd35377980e07dcef8cb",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-nope",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166117,
+            "sha256": "76f5b160b7739ded3ce38cbf9ab693a79b6a80611de5b1cdadca793ac7bed2eb",
+            "mtime_ns": 1792922625476575082,
+            "ctime_ns": 1792922625476575082,
+            "inode": 4295548824
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 166117,
+            "sha256": "76f5b160b7739ded3ce38cbf9ab693a79b6a80611de5b1cdadca793ac7bed2eb",
+            "mtime_ns": 1792922625476575082,
+            "ctime_ns": 1792922625476575082,
+            "inode": 4295570835
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 948,
+            "sha256": "740e1a56017bfb3d66339f1fe76be30fc7143a21b6d16e31844a2bcb17079092",
+            "mtime_ns": 1792920962585970029,
+            "ctime_ns": 1792920962585970029,
+            "inode": 4295548831
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 40000
+      }
+    },
+    {
+      "name": "tinystories-silu",
+      "metrics_sha256": "f9a9585c8c506c19671912bf027ccf5854e41012dc21e72f98c9046e22bceb2f",
+      "plan_sha256": "b97d59ed132eff5aef1e9e66792c4e982a2224fcc46be2ee2f0fd601024b7f36",
+      "results_sha256": "4743af61dfa3c06b7dfc3995dd405ee7f3fe2efc51a0bd35377980e07dcef8cb",
+      "metric_records": 800,
+      "recovery": {
+        "name": "tinystories-silu",
+        "status": "completed",
+        "files": {
+          "console.log": {
+            "exists": true,
+            "bytes": 166044,
+            "sha256": "f9a9585c8c506c19671912bf027ccf5854e41012dc21e72f98c9046e22bceb2f",
+            "mtime_ns": 1792924332841420454,
+            "ctime_ns": 1792924332841420454,
+            "inode": 20425963798
+          },
+          "metrics.jsonl": {
+            "exists": true,
+            "bytes": 166044,
+            "sha256": "f9a9585c8c506c19671912bf027ccf5854e41012dc21e72f98c9046e22bceb2f",
+            "mtime_ns": 1792924332841420454,
+            "ctime_ns": 1792924332841420454,
+            "inode": 20425963800
+          },
+          "config.json": {
+            "exists": true,
+            "bytes": 947,
+            "sha256": "9587df96b5a352b9d8f703fbd5129592e20477d54058ea8c24ed1e77f279fee0",
+            "mtime_ns": 1792922628580579195,
+            "ctime_ns": 1792922628580579195,
+            "inode": 20425963799
+          }
+        },
+        "console_metric_records": 800,
+        "original_metric_records": 800,
+        "recovered_missing_records": 0,
+        "checkpoint_iteration": 40000
+      }
+    }
+  ]
+}

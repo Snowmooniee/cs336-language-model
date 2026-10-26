@@ -1,0 +1,26 @@
+[
+  {
+    "name": "sgd-1",
+    "status": "completed",
+    "initial_loss": 24.16925811767578,
+    "last_logged_loss": 20.000328063964844
+  },
+  {
+    "name": "sgd-10",
+    "status": "completed",
+    "initial_loss": 24.16925811767578,
+    "last_logged_loss": 3.2482306957244873
+  },
+  {
+    "name": "sgd-100",
+    "status": "completed",
+    "initial_loss": 24.16925811767578,
+    "last_logged_loss": 2.365311071883819e-23
+  },
+  {
+    "name": "sgd-1000",
+    "status": "completed",
+    "initial_loss": 24.16925811767578,
+    "last_logged_loss": 2.2401715161488425e+18
+  }
+]
